@@ -1,7 +1,6 @@
 import Sidebar from '../components/sidebar';
 import Recipe from '../components/recipe';
 import RecipeList from '../components/recipeList';
-import Navbar from '../components/navabar';
 
 import {createUseStyles} from 'react-jss'
 
@@ -17,7 +16,6 @@ export default function App(){
     return(
         <div className={classes.container}>
             <Sidebar />
-            <Navbar />
             <RecipeList />
             <Recipe />
         </div>

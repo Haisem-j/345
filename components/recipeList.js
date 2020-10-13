@@ -1,8 +1,19 @@
+import { createUseStyles } from "react-jss";
+import RecipeIcon from "./recipeIcon";
 
-export default function RecipeList(){
-    return(
-        <div>
-            RecipeList
-        </div>
-    )
+const useStyles = createUseStyles({
+  recipeListContainer: {
+    color: "black",
+    width: "25%",
+    overflow: "scroll",
+  },
+});
+
+export default function RecipeList() {
+  const classes = useStyles();
+  return (
+    <div className={classes.recipeListContainer}>
+      <RecipeIcon />
+    </div>
+  );
 }
